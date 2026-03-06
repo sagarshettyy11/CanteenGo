@@ -123,11 +123,7 @@ class _LoginScreenState extends State<LoginScreen> {
             shape: BoxShape.circle,
             border: Border.all(color: _accent.withOpacity(0.2), width: 2),
           ),
-          child: const Icon(
-            Icons.restaurant,
-            color: _primary,
-            size: 40,
-          ),
+          child: const Icon(Icons.restaurant, color: _primary, size: 40),
         ),
         const SizedBox(height: 24),
         const Text(
@@ -142,10 +138,7 @@ class _LoginScreenState extends State<LoginScreen> {
         const SizedBox(height: 8),
         const Text(
           'Your campus meals, simplified.',
-          style: TextStyle(
-            color: Color(0xFF64748B),
-            fontSize: 14,
-          ),
+          style: TextStyle(color: Color(0xFF64748B), fontSize: 14),
           textAlign: TextAlign.center,
         ),
       ],
@@ -189,8 +182,10 @@ class _LoginScreenState extends State<LoginScreen> {
               borderRadius: BorderRadius.circular(16),
               borderSide: const BorderSide(color: _primary, width: 2),
             ),
-            contentPadding:
-                const EdgeInsets.symmetric(vertical: 18, horizontal: 16),
+            contentPadding: const EdgeInsets.symmetric(
+              vertical: 18,
+              horizontal: 16,
+            ),
           ),
         ),
       ],
@@ -243,8 +238,10 @@ class _LoginScreenState extends State<LoginScreen> {
               borderRadius: BorderRadius.circular(16),
               borderSide: const BorderSide(color: _primary, width: 2),
             ),
-            contentPadding:
-                const EdgeInsets.symmetric(vertical: 18, horizontal: 16),
+            contentPadding: const EdgeInsets.symmetric(
+              vertical: 18,
+              horizontal: 16,
+            ),
           ),
         ),
       ],
@@ -288,10 +285,7 @@ class _LoginScreenState extends State<LoginScreen> {
           children: [
             Text(
               'Login',
-              style: TextStyle(
-                fontSize: 16,
-                fontWeight: FontWeight.w700,
-              ),
+              style: TextStyle(fontSize: 16, fontWeight: FontWeight.w700),
             ),
             SizedBox(width: 8),
             Icon(Icons.arrow_forward, size: 20),
@@ -311,10 +305,7 @@ class _LoginScreenState extends State<LoginScreen> {
           children: [
             const Text(
               'New student?',
-              style: TextStyle(
-                color: Color(0xFF64748B),
-                fontSize: 14,
-              ),
+              style: TextStyle(color: Color(0xFF64748B), fontSize: 14),
             ),
             const SizedBox(width: 4),
             GestureDetector(
@@ -335,19 +326,25 @@ class _LoginScreenState extends State<LoginScreen> {
   }
 
   Widget _buildFooterLinks() {
-    const linkStyle = TextStyle(
-      color: Color(0xFF94A3B8),
-      fontSize: 12,
-    );
+    const linkStyle = TextStyle(color: Color(0xFF94A3B8), fontSize: 12);
 
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        GestureDetector(onTap: () {}, child: const Text('Privacy Policy', style: linkStyle)),
+        GestureDetector(
+          onTap: () {},
+          child: const Text('Privacy Policy', style: linkStyle),
+        ),
         const SizedBox(width: 24),
-        GestureDetector(onTap: () {}, child: const Text('Terms of Service', style: linkStyle)),
+        GestureDetector(
+          onTap: () {},
+          child: const Text('Terms of Service', style: linkStyle),
+        ),
         const SizedBox(width: 24),
-        GestureDetector(onTap: () {}, child: const Text('Support', style: linkStyle)),
+        GestureDetector(
+          onTap: () {},
+          child: const Text('Support', style: linkStyle),
+        ),
       ],
     );
   }
