@@ -119,7 +119,7 @@ class _OrderStatusScreenState extends State<OrderStatusScreen> {
         decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(12),
-          border: Border.all(color: _primary.withOpacity(0.05)),
+          border: Border.all(color: _primary.withValues(alpha: 0.05)),
           boxShadow: [
             BoxShadow(
               color: Colors.black.withValues(alpha: 0.04),

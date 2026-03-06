@@ -1,8 +1,4 @@
-import 'package:canteengo/screens/chechout_screen.dart';
-import 'package:canteengo/pages/login_page.dart';
 import 'package:canteengo/screens/order_status.dart';
-import 'package:canteengo/pages/student_profile.dart';
-import 'package:canteengo/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -19,7 +15,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
       debugShowCheckedModeBanner: false,
-      home: const CanteenGoProfileApp(),
+      home: const OrderStatusScreen(),
     );
   }
 }
