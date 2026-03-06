@@ -15,7 +15,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const SplashScreen(),
+      debugShowCheckedModeBanner: false,
+      home: const CanteenGoSplashScreen(),
     );
   }
 }
