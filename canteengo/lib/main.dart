@@ -1,4 +1,6 @@
-import 'package:canteengo/screens/order_status.dart';
+// ignore: unused_import
+import 'package:canteengo/pages/food_details_page.dart';
+import 'package:canteengo/pages/menu_dashboard_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,7 +17,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
       debugShowCheckedModeBanner: false,
-      home: const OrderStatusScreen(),
+      home: const HomePageApp(),
     );
   }
 }
