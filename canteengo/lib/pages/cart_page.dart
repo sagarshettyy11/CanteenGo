@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const CartScreenApp());
-}
-
 class CartScreenApp extends StatelessWidget {
   const CartScreenApp({super.key});
 

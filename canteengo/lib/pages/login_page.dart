@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const CanteenGoApp());
-}
-
 class CanteenGoApp extends StatelessWidget {
   const CanteenGoApp({super.key});
 

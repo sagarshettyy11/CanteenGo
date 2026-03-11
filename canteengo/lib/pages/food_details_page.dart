@@ -7,10 +7,6 @@ const Color kBackground = Color(0xFFF8F6F6);
 
 // ─── Entry Point ─────────────────────────────────────────────────────────────
 
-void main() {
-  runApp(const FoodDetailsPageApp());
-}
-
 class FoodDetailsPageApp extends StatelessWidget {
   const FoodDetailsPageApp({super.key});
 
@@ -23,7 +19,6 @@ class FoodDetailsPageApp extends StatelessWidget {
         scaffoldBackgroundColor: kBackground,
         colorScheme: ColorScheme.fromSeed(seedColor: kPrimary),
       ),
-      home: const FoodDetailsPage(),
     );
   }
 }

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:snackly/pages/cart_page.dart';
+import 'package:canteengo/screens/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
       debugShowCheckedModeBanner: false,
-      home: const CartScreenApp(),
+      home: const CanteenGoSplashScreen(),
     );
   }
 }

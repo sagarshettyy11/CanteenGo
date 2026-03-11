@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const CanteenGoOrderStatusApp());
-}
-
 class CanteenGoOrderStatusApp extends StatelessWidget {
   const CanteenGoOrderStatusApp({super.key});
 

@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const OrderHistoryPageApp());
-}
-
 class OrderHistoryPageApp extends StatelessWidget {
   const OrderHistoryPageApp({super.key});
 
