@@ -190,7 +190,9 @@ class _HomePageState extends State<HomePage> {
                 children: [
                   Container(
                     padding: const EdgeInsets.symmetric(
-                        horizontal: 10, vertical: 4),
+                      horizontal: 10,
+                      vertical: 4,
+                    ),
                     decoration: BoxDecoration(
                       color: Colors.white.withValues(alpha: 0.3),
                       borderRadius: BorderRadius.circular(999),
@@ -233,7 +235,9 @@ class _HomePageState extends State<HomePage> {
                       elevation: 3,
                       shadowColor: kPrimary.withValues(alpha: 0.3),
                       padding: const EdgeInsets.symmetric(
-                          horizontal: 18, vertical: 10),
+                        horizontal: 18,
+                        vertical: 10,
+                      ),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10),
                       ),
@@ -273,27 +277,20 @@ class _HomePageState extends State<HomePage> {
             onTap: () => setState(() => _selectedCategory = index),
             child: AnimatedContainer(
               duration: const Duration(milliseconds: 180),
-              padding: const EdgeInsets.symmetric(
-                  horizontal: 22, vertical: 10),
+              padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 10),
               decoration: BoxDecoration(
                 color: isSelected ? kPrimary : Colors.white,
                 borderRadius: BorderRadius.circular(999),
                 border: Border.all(
-                  color: isSelected
-                      ? kPrimary
-                      : const Color(0xFFF1F5F9),
+                  color: isSelected ? kPrimary : const Color(0xFFF1F5F9),
                 ),
               ),
               child: Text(
                 kCategories[index],
                 style: TextStyle(
                   fontSize: 13,
-                  fontWeight: isSelected
-                      ? FontWeight.w700
-                      : FontWeight.w600,
-                  color: isSelected
-                      ? Colors.white
-                      : const Color(0xFF475569),
+                  fontWeight: isSelected ? FontWeight.w700 : FontWeight.w600,
+                  color: isSelected ? Colors.white : const Color(0xFF475569),
                 ),
               ),
             ),
@@ -316,8 +313,7 @@ class _HomePageState extends State<HomePage> {
         childAspectRatio: 0.78,
       ),
       itemCount: kFoodItems.length,
-      itemBuilder: (context, index) =>
-          _FoodCard(item: kFoodItems[index]),
+      itemBuilder: (context, index) => _FoodCard(item: kFoodItems[index]),
     );
   }
 
@@ -369,8 +365,7 @@ class _HomePageState extends State<HomePage> {
                           decoration: BoxDecoration(
                             color: kAccentYellow,
                             shape: BoxShape.circle,
-                            border:
-                                Border.all(color: kPrimary, width: 2),
+                            border: Border.all(color: kPrimary, width: 2),
                           ),
                           child: Center(
                             child: Text(
@@ -391,9 +386,7 @@ class _HomePageState extends State<HomePage> {
                   item.label,
                   style: TextStyle(
                     fontSize: 10,
-                    fontWeight: isActive
-                        ? FontWeight.w700
-                        : FontWeight.w500,
+                    fontWeight: isActive ? FontWeight.w700 : FontWeight.w500,
                     color: isActive
                         ? Colors.white
                         : Colors.white.withValues(alpha: 0.65),
@@ -441,8 +434,7 @@ class _StickyHeader extends StatelessWidget {
                         fit: BoxFit.cover,
                         errorBuilder: (_, __, ___) => Container(
                           color: Colors.grey[200],
-                          child: const Icon(Icons.person,
-                              color: Colors.grey),
+                          child: const Icon(Icons.person, color: Colors.grey),
                         ),
                       ),
                     ),
@@ -514,8 +506,11 @@ class _StickyHeader extends StatelessWidget {
                 child: Row(
                   children: [
                     const SizedBox(width: 14),
-                    const Icon(Icons.search,
-                        color: Color(0xFF94A3B8), size: 20),
+                    const Icon(
+                      Icons.search,
+                      color: Color(0xFF94A3B8),
+                      size: 20,
+                    ),
                     const SizedBox(width: 8),
                     Expanded(
                       child: TextField(
@@ -572,15 +567,15 @@ class _FoodCard extends StatelessWidget {
               children: [
                 ClipRRect(
                   borderRadius: const BorderRadius.vertical(
-                      top: Radius.circular(16)),
+                    top: Radius.circular(16),
+                  ),
                   child: SizedBox.expand(
                     child: Image.network(
                       item.imageUrl,
                       fit: BoxFit.cover,
                       errorBuilder: (_, __, ___) => Container(
                         color: Colors.grey[200],
-                        child: const Icon(Icons.fastfood,
-                            color: Colors.grey),
+                        child: const Icon(Icons.fastfood, color: Colors.grey),
                       ),
                     ),
                   ),
@@ -602,8 +597,11 @@ class _FoodCard extends StatelessWidget {
                           ),
                         ],
                       ),
-                      child: const Icon(Icons.favorite,
-                          color: kPrimary, size: 14),
+                      child: const Icon(
+                        Icons.favorite,
+                        color: kPrimary,
+                        size: 14,
+                      ),
                     ),
                   ),
               ],
@@ -661,8 +659,11 @@ class _FoodCard extends StatelessWidget {
                           ),
                         ],
                       ),
-                      child: const Icon(Icons.add,
-                          color: Colors.white, size: 20),
+                      child: const Icon(
+                        Icons.add,
+                        color: Colors.white,
+                        size: 20,
+                      ),
                     ),
                   ],
                 ),
@@ -681,6 +682,5 @@ class _NavItem {
   final IconData icon;
   final String label;
   final String? badge;
-  const _NavItem(
-      {required this.icon, required this.label, this.badge});
+  const _NavItem({required this.icon, required this.label, this.badge});
 }
