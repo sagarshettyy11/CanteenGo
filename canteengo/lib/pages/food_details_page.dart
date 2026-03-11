@@ -148,7 +148,7 @@ class _FoodDetailsPageState extends State<FoodDetailsPage> {
                       height: 300,
                       width: double.infinity,
                       fit: BoxFit.cover,
-                      errorBuilder: (_, __, ___) => Container(
+                      errorBuilder: (_,_, _) => Container(
                         height: 300,
                         color: Colors.grey[200],
                         child: const Icon(Icons.fastfood,

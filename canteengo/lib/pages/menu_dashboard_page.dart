@@ -270,7 +270,7 @@ class _HomePageState extends State<HomePage> {
         scrollDirection: Axis.horizontal,
         padding: const EdgeInsets.symmetric(horizontal: 16),
         itemCount: kCategories.length,
-        separatorBuilder: (_, __) => const SizedBox(width: 10),
+        separatorBuilder: (_, _) => const SizedBox(width: 10),
         itemBuilder: (context, index) {
           final isSelected = index == _selectedCategory;
           return GestureDetector(
@@ -432,7 +432,7 @@ class _StickyHeader extends StatelessWidget {
                       child: Image.network(
                         'https://lh3.googleusercontent.com/aida-public/AB6AXuDqW5C6ZCU0dgzg8oeZKBV0afnc_ttFEKip7A59mKYiGsf_xijDl4femJAEgE20C-pP328O5GgQkliN_TNWBR1I9VrLyQgbwZ76jyZ0xYdGLiPCqNjpVZi9i8mRSyh4NSPaRVi1IkmRzylPicxJjzfrD52hNd1sLnQkxv1XzKihCd7rJom2uSdXPP1o8FnfCx7fg1B6tamEdzw3uM8NvSrOc0Dcpv6kV_f0_CARhnFdsbiuFrKJ22sgRbsN9t6BmQUyTY2z7os10ZsB',
                         fit: BoxFit.cover,
-                        errorBuilder: (_, __, ___) => Container(
+                        errorBuilder: (_, _, _) => Container(
                           color: Colors.grey[200],
                           child: const Icon(Icons.person, color: Colors.grey),
                         ),
@@ -573,7 +573,7 @@ class _FoodCard extends StatelessWidget {
                     child: Image.network(
                       item.imageUrl,
                       fit: BoxFit.cover,
-                      errorBuilder: (_, __, ___) => Container(
+                      errorBuilder: (_, _, _) => Container(
                         color: Colors.grey[200],
                         child: const Icon(Icons.fastfood, color: Colors.grey),
                       ),
